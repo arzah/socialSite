@@ -23,10 +23,10 @@ export default function Profile(props) {
             <Text style={styles.larger}>Current Username: {submittedText}</Text>
             <TextInput placeholder="Input New Username" style={styles.textBox} onChangeText={changeText} value={displayText} />
 
-            <Button title="Change Username" buttonStyle={styles.button} onPress={makeBlank}></Button>
+            <Button title="Change Username" buttonStyle={styles.button} type="clear" onPress={makeBlank}></Button>
             
-
-            <Button title="Home" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Home", {
+            <View style={styles.expand}>
+            <Button title="Home" buttonStyle={styles.button} type="clear" onPress={() => props.navigation.navigate("Home", {
             username: submittedText,
             })}> </Button>
 
@@ -37,7 +37,7 @@ export default function Profile(props) {
             <Button title="Community" buttonStyle={styles.button} type="clear" onPress={() => props.navigation.navigate("Community", {
             username: submittedText,
             })}> </Button>
-
+            </View>
         </View>
     )
 }
@@ -57,9 +57,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#D7C5B2",
         flex: 1,
     },
-  button: {
-    color: "white",
-  },
   expand: {
     flex: 1,
     marginTop: 90,
