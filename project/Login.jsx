@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#D7C5B2",
   },
   button: {
-    color: "#A1601B",
+    backgroundColor: "#A1601B",
   },
 });
