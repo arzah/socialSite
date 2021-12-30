@@ -31,10 +31,10 @@ export default function Library(props) {
 
               }} >
               <View style={styles.modalStyling}>
-              <TextInput
+              <TextInput style={styles.textColor}
                   placeholder="Book Title"
                   onChangeText={setText} />
-              <TextInput
+              <TextInput style={styles.textColor}
                   placeholder="Genre"
                   onChangeText={setGenre} />
                   <Button title="Submit"
