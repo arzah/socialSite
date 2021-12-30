@@ -20,14 +20,14 @@ export default function Community() {
         <Card.Title>@booksrthebst</Card.Title> 
             <Text>Six of Crows is ok, don't really get the hype behind it.</Text>
             <View style={styles.fixToText}>
-                <Button title="Like" onPress={() => {
+                <Button title="Like" buttonStyle={styles.button} onPress={() => {
                     setLike(like + 1); 
                     
 				}
 				}></Button>
                 <Text>{like}</Text>
             
-                <Button title="Dislike" onPress={() => {
+                <Button title="Dislike" buttonStyle={styles.button} onPress={() => {
                     setDislike(dislike - 1)
 				}
 				}></Button>
@@ -39,14 +39,14 @@ export default function Community() {
         <Card.Title>@Libby'sCorner</Card.Title> 
             <Text>Just finished 'We were liars'...crying and throwing up rn.</Text>
             <View style={styles.fixToText}>
-                <Button title="Like" onPress={() => {
+                <Button title="Like" buttonStyle={styles.button} onPress={() => {
                     setwLike(wlike + 1); 
                     
 				}
 				}></Button>
                 <Text>{wlike}</Text>
             
-                <Button title="Dislike" onPress={() => {
+                <Button title="Dislike" buttonStyle={styles.button} onPress={() => {
                     setwDislike(wdislike - 1)
 				}
 				}></Button>
@@ -59,14 +59,14 @@ export default function Community() {
         <Card.Title>@ciara</Card.Title> 
             <Text>Whoever told me Cruel Prince had romance, lets talk.</Text>
             <View style={styles.fixToText}>
-                <Button title="Like" onPress={() => {
+                <Button title="Like" buttonStyle={styles.button} onPress={() => {
                     setcLike(clike + 1);
                     
 				}
 				}></Button>
                 <Text>{clike}</Text>
             
-                <Button title="Dislike" onPress={() => {
+                <Button title="Dislike" buttonStyle={styles.button} onPress={() => {
                     setcDislike(cdislike - 1)
 				}
 				}></Button>
@@ -78,14 +78,14 @@ export default function Community() {
         <Card.Title>@ninalikestoread</Card.Title> 
             <Text>Controversial opinion but BookTok just recommends the same 4 authors over and over again. </Text>
             <View style={styles.fixToText}>
-                <Button title="Like" onPress={() => {
+                <Button title="Like" buttonStyle={styles.button} onPress={() => {
                     setnLike(nlike + 1); 
                     
 				}
 				}></Button>
                 <Text>{nlike}</Text>
             
-                <Button title="Dislike" onPress={() => {
+                <Button title="Dislike" buttonStyle={styles.button} onPress={() => {
                     setnDislike(ndislike - 1)
 				}
 				}></Button>
@@ -112,6 +112,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-
+    button: {
+        backgroundColor: '#45503B',
+        margin: 10,
+        borderRadius: 10,
+  },
 });
 
