@@ -57,8 +57,8 @@ export default function Library(props) {
                   ({ item }) => {
                       return (
                           <Card style={styles.cardStyling}>
-                              <Card.Title>Book Title: {item.text}</Card.Title>
-                              <Text>Genre: </Text>
+                              <Card.Title style={styles.textColor}>Book Title: {item.text}</Card.Title>
+                              <Text style={styles.textColor}>Genre: </Text>
                                   <Userpost text={item.genre} remove={remove} id={item.id} /> 
                         </Card>
                     )
@@ -85,9 +85,11 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         alignItems: "center",
         backgroundColor: "#B3DEC1",
-        color: 'black',
         padding: 30,
         margin: 25,
+    },
+    textColor: {
+        color: 'black',
     },
     cardStyling: {
         alignItems: "center",
