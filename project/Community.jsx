@@ -15,7 +15,7 @@ export default function Community() {
 
     
 	return (
-        <View>
+        <View style={styles.container}>
       <Card> 
         <Card.Title>@booksrthebst</Card.Title> 
             <Text>Six of Crows is ok, don't really get the hype behind it.</Text>
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     marginHorizontal: 16,
+    backgroundColor: '#E5FCF5',
   },
 
   fixToText: {
