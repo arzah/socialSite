@@ -20,7 +20,7 @@ const user = {
 
 export default function App() {
   return (
-   <NavigationContainer>
+   <NavigationContainer style={styles.container}>
       <Stack.Navigator>
        <Stack.Screen name="Login" component={Login} />
        <Stack.Screen name="Home" component={Home} initialParams={user}/>
@@ -34,7 +34,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-   backgroundColor: "#734524",
+   backgroundColor: "#412525",
   },
 
 });
