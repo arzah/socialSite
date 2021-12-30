@@ -24,7 +24,8 @@ export default function Home(props) {
     <View style={styles.container}>
           <Text>Your Post:</Text>
           <TextInput onChangeText={setText} />
-          <Button title="Submit"
+      <Button title="Submit"
+            buttonStyle={styles.button}
               onPress={() => {
                   setPosts(posts.concat({
                       id: count,
@@ -47,9 +48,10 @@ export default function Home(props) {
             }
         />
 
-          <Button
-              title="Go to Profile"
-              onPress={() => props.navigation.navigate("Profile",)}> </Button>
+      <Button
+          buttonStyle={styles.button}
+          title="Go to Profile"
+          onPress={() => props.navigation.navigate("Profile",)}> </Button>
 
     </View>
   )
@@ -59,7 +61,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#E5FCF5',
     padding: 8,
-  }
+  },
+    button: {
+      backgroundColor: '#45503B',
+      borderRadius: 10,
+  },
 });
