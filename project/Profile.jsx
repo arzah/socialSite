@@ -34,7 +34,7 @@ export default function Profile(props) {
             username: submittedText,
             })}> </Button>
 
-            <Button title="Community" buttonStyle={styles.button} type="clear" onPress={() => props.navigation.navigate("Community", {
+            <Button title="Community" buttonStyle={styles.button}  onPress={() => props.navigation.navigate("Community", {
             username: submittedText,
             })}> </Button>
             </View>
@@ -54,11 +54,14 @@ const styles = StyleSheet.create({
     },
     container: {
         padding: 5,
-        backgroundColor: "#D7C5B2",
+        backgroundColor: "#E5FCF5",
         flex: 1,
     },
   expand: {
     flex: 1,
     marginTop: 90,
+    },
+    button: {
+      backgroundColor: '#E5FCF5',
   },
 });
