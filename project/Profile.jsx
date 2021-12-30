@@ -53,6 +53,14 @@ const styles = StyleSheet.create({
     },
     container: {
         padding: 5,
-
-    }
+        backgroundColor: "#D7C5B2",
+        flex: 1,
+    },
+  button: {
+    backgroundColor: "#A1601B",
+  },
+  expand: {
+    flex: 1,
+    marginTop: 90,
+  },
 });
