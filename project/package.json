@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build": "tsc"
+    "homepage": "https://github.com/arzah/socialSite.git"
+
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
