@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { View, TextInput, FlatList, StyleSheet } from 'react-native';
 import { Text, Card, Button } from 'react-native-elements';
 import Userpost from './Userpost';
-import Profile from './Profile';
 
 export default function Home(props) {
 
