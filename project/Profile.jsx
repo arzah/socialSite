@@ -30,7 +30,7 @@ export default function Profile(props) {
             username: submittedText,
             })}> </Button>
 
-            <Button title="Library" buttonStyle={styles.button} type="clear" onPress={() => props.navigation.navigate("Library", {
+            <Button title="Library" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Library", {
             username: submittedText,
             })}> </Button>
 
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     marginTop: 90,
     },
     button: {
-      backgroundColor: '#45503B',
+        backgroundColor: '#45503B',
+        margin: 10,
   },
 });
