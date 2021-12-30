@@ -31,7 +31,7 @@ export default function AssetExample(props) {
         onChangeText={setPassword}
         secureTextEntry={true} />
         </View>
-      <Button title="Submit" buttonStyle={styles.button}onPress={() => {checkAuth()}} />
+      <Button title="Submit" buttonStyle={styles.button} onPress={() => {checkAuth()}} />
     </View>
   );
 }

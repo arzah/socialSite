@@ -22,18 +22,18 @@ export default function Profile(props) {
             <Text style={styles.larger}>Current Username: {submittedText}</Text>
             <TextInput placeholder="Input New Username" style={styles.textBox} onChangeText={changeText} value={displayText} />
 
-            <Button title="Change Username" onPress={makeBlank}></Button>
+            <Button title="Change Username" buttonStyle={styles.button} onPress={makeBlank}></Button>
             
 
-            <Button title="Home" onPress={() => props.navigation.navigate("Home", {
+            <Button title="Home" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Home", {
             username: submittedText,
             })}> </Button>
 
-            <Button title="Library" onPress={() => props.navigation.navigate("Library", {
+            <Button title="Library" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Library", {
             username: submittedText,
             })}> </Button>
 
-            <Button title="Community" onPress={() => props.navigation.navigate("Community", {
+            <Button title="Community" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Community", {
             username: submittedText,
             })}> </Button>
 
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
   button: {
-    backgroundColor: "#A1601B",
+    color: "#ffffff",
   },
   expand: {
     flex: 1,
