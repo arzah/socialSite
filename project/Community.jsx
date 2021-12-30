@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View} from 'react-native';
 import {Card, Text, Button} from 'react-native-elements';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Community() { 
 	
@@ -14,7 +15,8 @@ export default function Community() {
     const [ndislike, setnDislike] = useState(-26);
 
     
-	return (
+    return (
+        <ScrollView>
         <View style={styles.container}>
       <Card> 
         <Card.Title>@booksrthebst</Card.Title> 
@@ -94,7 +96,7 @@ export default function Community() {
             </Card>
             
             </View>
-        
+        </ScrollView>
         
 );
 
