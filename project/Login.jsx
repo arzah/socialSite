@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   background: {
-    backgroundColor: "#D7C5B2",
+    backgroundColor: "#C4D7F2",
     flex: 1,
   },
   button: {
-    backgroundColor: "#A1601B",
+    backgroundColor: "#776871",
   },
   expand: {
     flex: 1,
