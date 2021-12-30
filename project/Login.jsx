@@ -29,7 +29,7 @@ export default function AssetExample(props) {
         placeholder="Password" 
         onChangeText={setPassword}
         secureTextEntry={true} />
-      <Button title="Submit" color="#A1601B"style={styles.button} onPress={() => {checkAuth()}} />
+      <Button title="Submit" buttonStyle={styles.button}onPress={() => {checkAuth()}} />
     </View>
   );
 }

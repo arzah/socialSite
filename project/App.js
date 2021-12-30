@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import React from "react";
 import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { StyleSheet } from 'react-native';
 import Login from './Login';
 import Home from './Home';
 import Profile from './Profile';
@@ -30,3 +31,10 @@ export default function App() {
    </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+   backgroundColor: "#734524",
+  },
+
+});
