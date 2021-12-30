@@ -22,7 +22,7 @@ export default function Library(props) {
 
   return (
     <View style={styles.container}>
-          <Button title="Add Books" onPress={() => setModalVisible(true)} />
+          <Button title="Add Books" buttonStyle={styles.button} onPress={() => setModalVisible(true)} />
             <Modal // I learned about Modal's from https://reactnative.dev/docs/modal
                 animationType="slide"
                 transparent={true}
@@ -37,7 +37,8 @@ export default function Library(props) {
               <TextInput
                   placeholder="Genre"
                   onChangeText={setGenre} />
-          <Button title="Submit"
+                  <Button title="Submit"
+                      buttonStyle={styles.button}
               onPress={() => {
                   setPosts(posts.concat({
                       id: count,
@@ -64,7 +65,8 @@ export default function Library(props) {
                 }
             }
         />
-                <Button
+          <Button
+              buttonStyle={styles.button}
               title="Go to Profile"
               onPress={() => props.navigation.navigate("Profile",)}> </Button>
 
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#E5FCF5',
     padding: 8,
     },
     modalStyling: {
@@ -88,5 +90,9 @@ const styles = StyleSheet.create({
     },
     cardStyling: {
         alignItems: "center",
-    }
+    },
+    button: {
+        backgroundColor: '#45503B',
+        borderRadius: 10,
+    },
 });
