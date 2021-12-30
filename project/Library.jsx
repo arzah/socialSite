@@ -31,12 +31,14 @@ export default function Library(props) {
 
               }} >
               <View style={styles.modalStyling}>
-              <TextInput style={styles.textColor}
-                  placeholder="Book Title"
-                  onChangeText={setText} />
-              <TextInput style={styles.textColor}
-                  placeholder="Genre"
-                  onChangeText={setGenre} />
+              <TextInput 
+                    placeholder="Book Title"
+                    placeholderTextColor="black"
+                    onChangeText={setText} />
+              <TextInput 
+                    placeholder="Genre"
+                    placeholderTextColor="black"
+                    onChangeText={setGenre} />
                   <Button title="Submit"
                       buttonStyle={styles.button}
               onPress={() => {
@@ -57,8 +59,8 @@ export default function Library(props) {
                   ({ item }) => {
                       return (
                           <Card style={styles.cardStyling}>
-                              <Card.Title style={styles.textColor}>Book Title: {item.text}</Card.Title>
-                              <Text style={styles.textColor}>Genre: </Text>
+                              <Card.Title >Book Title: {item.text}</Card.Title>
+                              <Text>Genre: </Text>
                                   <Userpost text={item.genre} remove={remove} id={item.id} /> 
                         </Card>
                     )
@@ -88,9 +90,7 @@ const styles = StyleSheet.create({
         padding: 30,
         margin: 25,
     },
-    textColor: {
-        color: 'black',
-    },
+
     cardStyling: {
         alignItems: "center",
     },
