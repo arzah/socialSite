@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
   button: {
-    color: "#ffffff",
+    color: "#FFFFFF",
   },
   expand: {
     flex: 1,
