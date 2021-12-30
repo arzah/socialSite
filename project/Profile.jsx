@@ -34,7 +34,7 @@ export default function Profile(props) {
             username: submittedText,
             })}> </Button>
 
-            <Button title="Community" buttonStyle={styles.button} onPress={() => props.navigation.navigate("Community", {
+            <Button title="Community" buttonStyle={styles.button} type="clear" color="white" onPress={() => props.navigation.navigate("Community", {
             username: submittedText,
             })}> </Button>
 
