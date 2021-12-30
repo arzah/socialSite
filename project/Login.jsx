@@ -1,3 +1,4 @@
+import { setStatusBarNetworkActivityIndicatorVisible } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { View, StyleSheet } from 'react-native';
 import {Input, Text, Button} from 'react-native-elements';
@@ -14,7 +15,7 @@ export default function AssetExample(props) {
   }
 
   return (
-    <View>
+    <View style={styles.background}>
       <Text h2>Username:</Text>
       <Input
         style={styles.input}
@@ -28,7 +29,7 @@ export default function AssetExample(props) {
         placeholder="Password" 
         onChangeText={setPassword}
         secureTextEntry={true} />
-      <Button title="Submit" onPress={() => {checkAuth()}} />
+      <Button title="Submit" style={styles.button} onPress={() => {checkAuth()}} />
     </View>
   );
 }
@@ -39,5 +40,11 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
+  },
+  background: {
+    backgroundColor: "#D7C5B2",
+  },
+  button: {
+    backgroundColor: "#A1601B",
   },
 });
