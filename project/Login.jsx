@@ -16,6 +16,7 @@ export default function AssetExample(props) {
 
   return (
     <View style={styles.background}>
+      <View style={styles.expand}>
       <Text h2>Username:</Text>
       <Input
         style={styles.input}
@@ -29,6 +30,7 @@ export default function AssetExample(props) {
         placeholder="Password" 
         onChangeText={setPassword}
         secureTextEntry={true} />
+        </View>
       <Button title="Submit" buttonStyle={styles.button}onPress={() => {checkAuth()}} />
     </View>
   );
@@ -43,8 +45,13 @@ const styles = StyleSheet.create({
   },
   background: {
     backgroundColor: "#D7C5B2",
+    flex: 1,
   },
   button: {
     backgroundColor: "#A1601B",
+  },
+  expand: {
+    flex: 1,
+    marginTop: 90,
   },
 });
