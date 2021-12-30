@@ -9,9 +9,7 @@ export default function AssetExample(props) {
   const [password, setPassword] = useState("");
 
   function checkAuth() {
-    if(username == "Scoobert" && password == "Doo") {
       props.navigation.replace("Profile");
-    }
   }
 
   return (
