@@ -20,8 +20,8 @@ const user = {
 
 export default function App() {
   return (
-   <NavigationContainer style={styles.container}>
-      <Stack.Navigator>
+   <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: 'papayawhip' } }}>
        <Stack.Screen name="Login" component={Login} />
        <Stack.Screen name="Home" component={Home} initialParams={user}/>
         <Stack.Screen name="Profile" component={Profile} initialParams={user} />
